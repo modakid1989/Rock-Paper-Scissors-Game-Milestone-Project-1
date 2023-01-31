@@ -45,10 +45,34 @@ alt=""
 <div class="ScoreBoard">
 <h2>Scoreboard</h2>
 <table>
-
+<thead class="Score-Title">
+<tr>
+<th>User Win's</th>
+<th>Computer Win's</th>
+</tr>
+</thead>
+<tbody class="Score">
+<tr>
+<td id="User-Total Score">0</td>
+<td id="Computer-Total Score">0</td>
+</tr>
+</tbody>
 </table>
 </div>
+<div class="Restart-Button">
+<button id="Reset-Scoreboard">Restart Game</button>
+</div>
 </main>
-    
+<footer>
+<audio
+id="Background-Music"
+controls
+autoplay
+loop
+src=""
+type=""
+></audio>
+</footer>   
 </body>
+<script src="game.js"></script>
 </html>
