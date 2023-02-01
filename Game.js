@@ -23,5 +23,16 @@ function tieResult() {
 }
 
 function logCounter() {
-    document.getElementById
+    document.getElementById("User-Total Score").textContent = winnerCount;
+    document.getElementById("Computer-Total Score").textContent = loserCount;
+}
+
+function rockCrushesScissors() {
+    document.getElementById("Result-Explained").innerHTML = "Rock Crushes Scissors";
+    img.src = ""
+    img.alt = ""
+}
+
+function paperCoversRock() {
+    document.getElementById("Results-Explained").innerHTML = 
 }
