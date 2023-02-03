@@ -34,5 +34,8 @@ function rockCrushesScissors() {
 }
 
 function paperCoversRock() {
-    document.getElementById("Results-Explained").innerHTML = 
+    document.getElementById("Results-Explained").innerHTML = "Paper Covers Rock";
+    img.src =""
+    img.alt =""
 }
+
