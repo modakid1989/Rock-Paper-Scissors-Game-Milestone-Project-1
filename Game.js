@@ -39,3 +39,30 @@ function paperCoversRock() {
     img.alt =""
 }
 
+function ScissorsCutsPaper() {
+    document.getElementById("Result-Explained").innerHTML =
+    "Scissors Cuts Paper";
+    img.src =""
+    img.alt =""
+}
+
+function generatedChoice() {
+    let computerChoice = Math.random() ;
+
+    if (computerChoice <= 0.2) {
+        computerChoice = "rock";
+      } else if (0.21 <= computerChoice <= 0.4) {
+        computerChoice = "paper";
+      } else if (0.41 <= computerChoice <= 0.6) {
+        computerChoice = "scissors";
+      }
+      return computerChoice;
+    }
+    
+    document.getElementById("rock").addEventListener("click", function () {
+      clickSound.play();
+      let userInput = "rock";
+      let comChoice = generatedChoice();
+    
+}
+
