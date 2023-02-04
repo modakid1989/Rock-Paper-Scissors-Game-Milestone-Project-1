@@ -5,28 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-<h1>Rock Paper Scissors</h1>
-<nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-</ul>
-</nav>
+<header class="header">
+<h1 class="title">Rock Paper Scissors</h1>
 </header>
-
-<main>
-<h2><a href="game.html">Start Game</a></h2>
-<div class="home-page-image"></div>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Rock-paper-scissors.svg/330px-Rock-paper-scissors.svg.png"alt="Two people playing against one another"
-/>
+<main class="main">
+<div class="ScoreBoard">
+<h2 class="Score-Information">Make A Selection</h2>
+<h3 class="Score-Message" id="scoreMessage">1st person who scores 5 points is the winner of the game</h3>
+<div class="Score-Keeper">
+<div class="Score-Box">
+<div class="Sign" id="Player1Sign">❔</div>
+<p class="Score" id=" Player1Score">Player 1: 0</p>
+</div>
+<div class="Score-Box">
+<div class="Sign" id="ComputerSign">❔</div>
+<p class="Score" id=" ComputerScore">Computer: 0</p>
+</div>
+</div>
+</div>
+<div class="buttons">
+<button class="btn btn-square" id="rockBtn">
+<div class="Sign">&#9994;&#127998;</div>
+</button>
+<button class="btn btn-square" id="paperBtn">
+<div class="Sign">&#9995;&#127998;</div>
+</button>
+<button class="btn btn-square" id="scissorsBtn">
+    <div class="sign">&#9996;&#127998;</div>
+</button>
 </div>
 </main>
-<footer>
-<p class="Credit">
-    Game created by Jonphia Monee Hart
+<footer class="footer">
+<p>
+<script>
+document.write(new Date().getFullYear())
+</script>
+Game created by Jonphia Monee Hart
 </p>
+    
 </footer>
     
 </body>
