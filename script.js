@@ -114,7 +114,7 @@ function updateScore() {
   } else if (roundWinner === 'player') {
     scoreInfo.textContent = 'Winner,Winner Chicken Dinner!'
   } else if (roundWinner === 'computer') {
-    scoreInfo.textContent = 'Sorry Buddy! Try Again'
+    scoreInfo.textContent = 'Sorry Buddy! Try Again!'
   }
 
   playerScorePara.textContent = `Player: ${playerScore}`
