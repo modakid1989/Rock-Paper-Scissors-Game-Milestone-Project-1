@@ -9,35 +9,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/4c536a6bd5.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
 <body>
 <header class="header">
-<h1 class="title">Rock Paper Scissors</h1>
+<h1 class="title">ROCK PAPER SCISSORS</h1>
 </header>
 <main class="main">
-<div class="ScoreBoard">
-<h2 class="Score-Information">Make A Selection</h2>
-<h3 class="Score-Message" id="scoreMessage">1st to 5 is the winner!!</h3>
-<div class="Score-Keeper">
-<div class="Score-Box">
-<div class="Sign" id="Player1Sign">❔</div>
-<p class="Score" id=" Player1Score">Player 1: 0</p>
+<div class="scoreBoard">
+<h2 class="score-info">Make A Selection</h2>
+<h3 class="score-message" id="scoreMessage">1st to 5 is the winner!!</h3>
+<div class="scores-container">
+<div class="score-box">
+<div class="Sign" id="playersign">❔</div>
+<p class="Score" id=" playerScore">Player: 0</p>
 </div>
 <div class="Score-Box">
-<div class="Sign" id="ComputerSign">❔</div>
-<p class="Score" id=" ComputerScore">Computer: 0</p>
+<div class="Sign" id="computerSign">❔</div>
+<p class="Score" id=" computerScore">Computer: 0</p>
 </div>
 </div>
 </div>
 <div class="buttons">
 <button class="btn btn-square" id="rockBtn">
-<div class="Sign">&#9994;&#127998;</div>
+<div class="sign">✊</div>
 </button>
 <button class="btn btn-square" id="paperBtn">
-<div class="Sign">&#9995;&#127998;</div>
+<div class="sign">✋</div>
 </button>
 <button class="btn btn-square" id="scissorsBtn">
-    <div class="sign">&#9996;&#127998;</div>
+    <div class="sign">✌</div>
 </button>
 </div>
 </main>
