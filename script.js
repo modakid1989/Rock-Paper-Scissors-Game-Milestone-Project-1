@@ -57,5 +57,35 @@ const endgameMsg = document.getElementById('endgameMsg')
 const overlay = document.getElementById('overlay')
 const restartBtn = document.getElementById('restartBtn')
 
+rockBtn.addEventListener('click', () => handleClick('Rock'))
+rockBtn.addEventListener('click', () => handleClick('Paper'))
+rockBtn.addEventListener('click', () => handleClick('Scissors'))
+restartBtn.addEventListener('click', restartGame)
+overlay.addEventListener('click', closeEndgameModal)
+
+function handleClick(playerSelection) {
+if (isGameOver()) {
+openEndgameModal()
+return
+}
+      
+}
+const computerSelection = getRandomChoice()
+playRound(playerSelection, computerSelection)
+updateChoices(playerSelection, computerSelection)
+updateScore()
+
+if (isGameOver()) {
+openEndgameModal()
+setFinalMessage()
+}
 
 
+function updateChoices(playerSelection, computerSelection) {
+switch (playerSelection) {
+case 'Rock':
+playerSign.textContent ='&#9994;&#127998;'
+break
+}
+
+}
