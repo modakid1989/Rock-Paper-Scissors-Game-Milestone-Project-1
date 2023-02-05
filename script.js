@@ -110,11 +110,11 @@ function updateChoices(playerSelection, computerSelection) {
 
 function updateScore() {
   if (roundWinner === 'tie') {
-    scoreInfo.textContent = "It's a tie!"
+    scoreInfo.textContent = "Gosh It's A Tie! Try Again!"
   } else if (roundWinner === 'player') {
-    scoreInfo.textContent = 'You won!'
+    scoreInfo.textContent = 'Winner,Winner Chicken Dinner!'
   } else if (roundWinner === 'computer') {
-    scoreInfo.textContent = 'You lost!'
+    scoreInfo.textContent = 'Sorry Buddy! Try Again'
   }
 
   playerScorePara.textContent = `Player: ${playerScore}`
@@ -156,14 +156,14 @@ function closeEndgameModal() {
 
 function setFinalMessage() {
   return playerScore > computerScore
-    ? (endgameMsg.textContent = 'You won!')
-    : (endgameMsg.textContent = 'You lost...')
+    ? (endgameMsg.textContent = 'Good Job Buddy! You Won The Game!')
+    : (endgameMsg.textContent = 'Better Luck Next Time Buddy!')
 }
 
 function restartGame() {
   playerScore = 0
   computerScore = 0
-  scoreInfo.textContent = 'Make A Selection'
+  scoreInfo.textContent = 'Make Your Selection'
   scoreMessage.textContent = 'First to score 5 points wins the game'
   playerScorePara.textContent = 'Player: 0'
   computerScorePara.textContent = 'Computer: 0'
