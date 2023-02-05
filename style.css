@@ -1,10 +1,10 @@
 :root {
     --primary-light: rgb(34, 31, 31);
-    --primary-dark: #76163967;
-    --secondary-dark: #191d1a;
+    --primary-dark: navy;
+    --secondary-dark: silver;
     --secondary-dark-hover: #1a2e4f;
-    --secondary-dark-active: #b1255d;
-    --header: #55071ce5;
+    --secondary-dark-active: rgb(0, 0, 128);
+    --header: rgb(192, 192, 192);
     --primary-yellow: #292419;
   }
   *,
